@@ -1,6 +1,14 @@
 # FileManager Extensions
 
-An set of extensions for FileManager to deal with saving and reading documents from the documents directory.
+This set of FileManager extensions will allow you to save and read text files that are stored in the application's DocumentsDirectory.
+
+Simply create a file called **FileManager+Extensions.swift** and paste the following code in to the file.
+
+From then on, you can create an instance of FileManager followed by the "." and you will see these methods presented to you as code completion.
+
+
+
+A set of extensions for FileManager to deal with saving and reading documents from the documents directory.
 
 ```swift
 extension FileManager {
@@ -45,7 +53,7 @@ This will display the path to the simulator's Document directory in the console
 
 ![image-20191130140051033](image-20191130140051033.png)
 
-You can then select the text and do <Command>-<Shift> - G in the finder and paste in the path to go to reveal the directory.
+You can then select the text and do command - shift - G in the finder and paste in the path to go to reveal the directory.
 
 ![image-20191130140330466](image-20191130140330466.png)
 
@@ -53,10 +61,10 @@ You can then select the text and do <Command>-<Shift> - G in the finder and past
 
 ###### Option 1
 
-If you feel comfortable that you will have no errors then you can simple do something like this:
+If you feel comfortable that you will have no errors then you can simply do something like this:
 
 ```Swift
-let someText = "This is some text for the boddy content of the file I want to save"
+let someText = "This is some text for the body content of the file I want to save"
 let fileName = "MyFile.txt"
 // This will save the contents of someText to a file named "MyFile.txt"
 FileManager().saveDocument(contents: someText, docName: fileName)
@@ -67,7 +75,7 @@ FileManager().saveDocument(contents: someText, docName: fileName)
 If you want to check for errors, you can use an optional closure that checks for errors and reports
 
 ```swift
-let someText = "This is some text for the boddy content of the file I want to save"
+let someText = "This is some text for the body content of the file I want to save"
 let fileName = "MyFile.txt"
 // Use the closure to report back to the user that there is an error
 FileManager().saveDocument(contents: "Some new text",
