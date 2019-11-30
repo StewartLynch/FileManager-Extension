@@ -49,7 +49,7 @@ Add the following line to the **application:didFinishLaunchingWithOptions:** met
 print(FileManager().docDirPath())
 ```
 
-This will display the path to the simulator's Document directory in the console
+This will display the path to the simulator's Document directory in the console as soon as your application loads.  That way you get quick access to any documents that you have stored there.  It also gets you quick access to the **Library/Application Support** where your CoreData SQLite databases are stored.
 
 ![image-20191130140051033](image-20191130140051033.png)
 
